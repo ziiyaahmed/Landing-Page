@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ziya Ahmed">
+    <meta name="description" content="Landing page for a club using html, css and javascript">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>ProGolf</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="timer.js"></script>
+    <link rel="stylesheet" href="utils.css">
+</head>
+<body class='overflow-x-hidden'>
+    <div class="container mx-auto">
+        <header>
+            <nav class="flex justify-between">
+                <div class="logo font-bold flex items-center text-blue" id="progolf">ProGolf</div>
+                <ul class="navbar flex items-center">
+                    <li ><a href="home">Home</a></li>
+                    <li><a href="#aboutus">About</a></li>
+                    <li><a href="#services">Services </a></li>
+                    <li><a href="contaact">Contact Us</a></li>
+                    <li><button class="btn">Join Now</button></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+        <main class="min-h-screen">
+            <section class="section1">
+                <div class="flex">
+                    <div class="topleft flex flex-col justify-center px-2">
+                        <div class=" text-center">
+                            <img class="dumbellimg" src="images/golf1.jpg" alt="">
+                        </div>
+                        <h1 class="my-1 text-center" id="paragraph">The best Golf Club of the town is here </h1> <p class=" text-center" id="paragraph">Discover the ultimate golfing experience with our prestigious golf club nestled in the heart of serene landscapes. Designed for both seasoned pros and enthusiastic beginners alike, our meticulously crafted 18-hole championship course promises challenges and rewards at every turn. Immerse yourself in lush fairways and meticulously manicured greens that offer a perfect blend of natural beauty and strategic design. Beyond the course, our club provides unparalleled amenities including a state-of-the-art clubhouse, expert coaching, and a vibrant community of fellow golf enthusiasts. Whether you seek competitive play or leisurely rounds with friends and family, our golf club ensures an unforgettable journey through the sport's timeless traditions. Join us and elevate your game at [Pro Golf], where every swing tells a story of excellence and passion.</p>
+                            <!-- Display the countdown timer in an element -->
+                            <p class="deal text-center">The deal ends in <span id="demo"></span></p>
+                            <div class="buttons">
+                                <button class="btn">Join now</button>
+                                <button class="btn">Contact Us</button>
+                            </div>
+                    </div>
+                    <div class="topright flex justify-center">
+                        <img class="golfing2" src="images/golf3.avif" alt="">
+                    </div>
+                </div>
+            </section>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <hr>
+            <section class="section2">
+                <h1 class="text-center my-2" id="pricing">Pricing</h1>
+                <p class="my-2" id="pricing">Our golf club offers flexible membership options tailored to suit every golfer's needs and preferences. Choose from our range of membership tiers, each designed to provide exceptional value and access to our world-class facilities. Whether you prefer unlimited play on our championship course, priority tee times, or exclusive member events, we have a package that fits your lifestyle. Our transparent pricing ensures clarity and affordability, with additional perks such as discounted rates on pro shop merchandise and dining privileges at our clubhouse. Joining our club not only enhances your golfing experience but also grants you access to a vibrant community of fellow enthusiasts. Embrace the essence of golfing excellence with us at ProGolf, where every membership is crafted to enrich your passion for the game.</p>
+                <div class="boxes flex justify-center">
+                    <div class="box">
+                        <h2>Silver</h2>
+                        <ul>
+                            <li class="highlighted">₹5000/month</li>
+                            <li>Unlimited access to the golf course on weekdays (Monday to Friday).</li>
+                            <li>Discounted rates on weekend play.</li>
+                            <li>Access to practice facilities including driving range and putting greens.</li>
+                            <li>Invitation to select club events and tournaments</li>
+                            <li>
+                                10% discount on pro shop merchandise.
+                            </li>
+                            <li>Access to clubhouse dining and social events</li>
+                            <li><button class="btn">Signup Now</button></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h2>Gold</h2>
+                        <ul>
+                            <li class="highlighted">₹10,000/month</li>
+                            <li>Unlimited access to the golf course seven days a week.</li>
+                            <li>Priority tee time booking.</li>
+                            <li>Complimentary use of practice facilities.</li>
+                            <li>Priority registration for club tournaments and events.</li>
+                            <li>15% discount on pro shop merchandise.</li>
+                            <li>Preferred pricing on golf lessons and clinics.</li>
+                            <li>Access to exclusive Gold member events and outings.</li>
+                            <li>VIP parking privileges.</li>
+                            
+                            <li><button class="btn">Signup Now</button></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h2>Platinum</h2>
+                        <ul>
+                            <li class="highlighted">₹25,000/month</li>
+                            <li>All benefits of Gold membership.</li>
+                            <li>Dedicated locker in the clubhouse.</li>
+                            <li>Unlimited complimentary guest passes per month.</li>
+                            <li>Personalized golf concierge service.</li>
+                            <li>20% discount on pro shop merchandise.</li>
+                            <li>Exclusive access to Platinum member-only areas and amenities.</li>
+                            <li>Priority access to affiliated golf courses and resorts.</li>
+                            <li><button class="btn">Signup Now</button></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+            <hr>
+            <section class="section3">
+                <h1 class="text-center my-2">Compare Plans</h1>
+                <div class="container plantable" id="table1">
+                    <table class="table text-center" id="table">
+                      <thead>
+                        <tr>
+                          <th></th><th>Silver</th>
+                          <th>Gold</th>
+                          <th>Platinum</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row" class="text-start">Access to equipments</th>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Private booking of club.</th>
+                          <td>-</td>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                        </tr>
+                      </tbody>
+              
+                      <tbody>
+                        <tr>
+                          <th scope="row" class="text-start">Free Parking</th>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Complimentary Breakfast</th>
+                          <td>-</td>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Unlimited members</th>
+                          <td>-</td>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Extra security</th>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>Yes</svg></td>
+                        </tr>
+                      </tbody>
+                    </table>
+            </section>
+            <hr>
+        </main>
+        <footer>
+            Copyright &copy; ProGolf.com | All rights reserved
+        </footer>
+
+    </div>
+</body>
+
+</html>
